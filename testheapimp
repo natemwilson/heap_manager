@@ -1,0 +1,23 @@
+#!/bin/bash
+
+########################################################################
+# testheapimp tests a single HeapMgr implementation.
+# To execute it, type testheapimp followed by the name of an existing
+# executable file that tests the HeapMgr implementation.
+########################################################################
+
+# Validate the argument.
+if [ "$#" -ne "1" ]; then
+   echo "Usage: testheapimp [executablefile]"
+   exit 1
+fi
+
+# Capture the argument.
+executablefile=$1
+
+echo "==============================================================="
+./$executablefile RandomRandom 100000 2000
+./$executablefile Worst 100000 2000
+echo "---------------------------------------------------------------"
+./$executablefile RandomRandom 100000 20000
+./$executablefile Worst 100000 20000
