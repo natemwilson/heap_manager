@@ -1,0 +1,753 @@
+$60 = 612
+Continuing.
+
+Breakpoint 1, HeapMgr_malloc (uBytes=440726033) at heapmgr2.c:268
+/u/narekg/assignment6/heapmgr2.c:268:8311:beg:0x401474
+Will ignore next 19 crossings of breakpoint 1.  Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x98b351990) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+/u/narekg/assignment6/heapmgr2.c:377:11965:beg:0x40170b
+/u/narekg/assignment6/heapmgr2.c:379:12051:beg:0x401713
+/u/narekg/assignment6/heapmgr2.c:382:12121:beg:0x401720
+/u/narekg/assignment6/heapmgr2.c:386:12227:beg:0x401728
+/u/narekg/assignment6/heapmgr2.c:387:12283:beg:0x40173c
+/u/narekg/assignment6/heapmgr2.c:386:12227:beg:0x401753
+/u/narekg/assignment6/heapmgr2.c:392:12497:beg:0x4017af
+/u/narekg/assignment6/heapmgr2.c:393:12555:beg:0x4017c3
+/u/narekg/assignment6/heapmgr2.c:392:12497:beg:0x4017da
+/u/narekg/assignment6/heapmgr2.c:395:12638:beg:0x4017de
+/u/narekg/assignment6/heapmgr2.c:398:12760:beg:0x4017e6
+testRandomRandom (iCount=627, iSize=<optimized out>) at testheapmgr.c:670
+/u/narekg/assignment6/testheapmgr.c:670:19576:beg:0x400c9a
+$61 = 613
+Undefined command: "pbins".  Try "help".
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x184686270) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Undefined command: "pbins".  Try "help".
+Bin 1023:
+	0xd3aaa29c0 -> $62 = {uUnits = 605130, oAdjacentChunk = 0x962970cf0}
+	0x962970cf0 -> $63 = {uUnits = 102117984, oAdjacentChunk = 0x12a22f1e50}
+	0x12a22f1e50 -> $64 = {uUnits = 111670596, oAdjacentChunk = 0x7115b1300}
+	0x7115b1300 -> $65 = {uUnits = 108780804, oAdjacentChunk = 0xe32de8a80}
+	0xe32de8a80 -> $66 = {uUnits = 21512814, oAdjacentChunk = 0x166921470}
+	0x166921470 -> $67 = {uUnits = 20211956, oAdjacentChunk = 0xa5cfb7820}
+	0xa5cfb7820 -> $68 = {uUnits = 98424530, oAdjacentChunk = 0x93c71bda0}
+	0x93c71bda0 -> $69 = {uUnits = 47447254, oAdjacentChunk = 0x909d9db0}
+	0x909d9db0 -> $70 = {uUnits = 21310034, oAdjacentChunk = 0xb06afde40}
+	0xb06afde40 -> $71 = {uUnits = 105466954, oAdjacentChunk = 0xfebdb9c00}
+	0xfebdb9c00 -> $72 = {uUnits = 54925692, oAdjacentChunk = 0x26c4aca60}
+	0x26c4aca60 -> $73 = {uUnits = 86663640, oAdjacentChunk = 0x7cc84a700}
+	0x7cc84a700 -> $74 = {uUnits = 131990412, oAdjacentChunk = 0xf45a36f30}
+	0xf45a36f30 -> $75 = {uUnits = 112217182, oAdjacentChunk = 0x838a08510}
+	0x838a08510 -> $76 = {uUnits = 14625184, oAdjacentChunk = 0x60aaa7630}
+	0x60aaa7630 -> $77 = {uUnits = 33483394, oAdjacentChunk = 0x89e840630}
+	0x89e840630 -> $78 = {uUnits = 141077922, oAdjacentChunk = 0xf0bfad630}
+	0xf0bfad630 -> $79 = {uUnits = 74639016, oAdjacentChunk = 0x234b11a50}
+	0x234b11a50 -> $80 = {uUnits = 41156054, oAdjacentChunk = 0xd454e510}
+	0xd454e510 -> $81 = {uUnits = 37865774, oAdjacentChunk = 0xbd02ca590}
+	0xbd02ca590 -> $82 = {uUnits = 80425706, oAdjacentChunk = 0x11e1213830}
+	0x11e1213830 -> $83 = {uUnits = 113094718, oAdjacentChunk = 0x1184abda20}
+	0x1184abda20 -> $84 = {uUnits = 48034582, oAdjacentChunk = 0xa03791a60}
+	0xa03791a60 -> $85 = {uUnits = 45369602, oAdjacentChunk = 0x31e563900}
+	0x31e563900 -> $86 = {uUnits = 20406264, oAdjacentChunk = 0x4d47b94f0}
+	0x4d47b94f0 -> $87 = {uUnits = 71384940, oAdjacentChunk = 0x10d7cf7eb0}
+	0x10d7cf7eb0 -> $88 = {uUnits = 82488148, oAdjacentChunk = 0x12542a1300}
+	0x12542a1300 -> $89 = {uUnits = 63962794, oAdjacentChunk = 0xa366a36d0}
+	0xa366a36d0 -> $90 = {uUnits = 28712188, oAdjacentChunk = 0x113c87c750}
+	0x113c87c750 -> $91 = {uUnits = 117608540, oAdjacentChunk = 0xb4b772380}
+	0xb4b772380 -> $92 = {uUnits = 104424284, oAdjacentChunk = 0x53e9d6870}
+	0x53e9d6870 -> $93 = {uUnits = 7511488, oAdjacentChunk = 0xaa36bc590}
+	0xaa36bc590 -> $94 = {uUnits = 17098542, oAdjacentChunk = 0xe4cb58e60}
+	0xe4cb58e60 -> $95 = {uUnits = 83787344, oAdjacentChunk = 0x66418bf80}
+	0x66418bf80 -> $96 = {uUnits = 37093838, oAdjacentChunk = 0xefd71ad0}
+	0xefd71ad0 -> $97 = {uUnits = 19684296, oAdjacentChunk = 0xc24c4ed50}
+	0xc24c4ed50 -> $98 = {uUnits = 61684936, oAdjacentChunk = 0xeaa1910d0}
+	0xeaa1910d0 -> $99 = {uUnits = 24532402, oAdjacentChunk = 0x510b7b3c0}
+	0x510b7b3c0 -> $100 = {uUnits = 17335610, oAdjacentChunk = 0x548266ab0}
+	0x548266ab0 -> $101 = {uUnits = 171374400, oAdjacentChunk = 0xc7441aec0}
+	0xc7441aec0 -> $102 = {uUnits = 80492406, oAdjacentChunk = 0xac2d44ef0}
+	0xac2d44ef0 -> $103 = {uUnits = 11552914, oAdjacentChunk = 0x101ed47e80}
+	0x101ed47e80 -> $104 = {uUnits = 98124634, oAdjacentChunk = 0x2c4ce3730}
+	0x2c4ce3730 -> $105 = {uUnits = 10195940, oAdjacentChunk = 0x3ad97fe00}
+	0x3ad97fe00 -> $106 = {uUnits = 43577274, oAdjacentChunk = 0xd60d86570}
+	0xd60d86570 -> $107 = {uUnits = 67312150, oAdjacentChunk = 0x3e01a3b00}
+	0x3e01a3b00 -> $108 = {uUnits = 96048598, oAdjacentChunk = 0x35688c510}
+	0x35688c510 -> $109 = {uUnits = 21523720, oAdjacentChunk = 0x0}
+/u/narekg/assignment6/heapmgr2.c:377:11965:beg:0x40170b
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x10ff24d960) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x95311a460) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0xdc3b3cd10) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0xf7b25d230) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x10d7cf7ec0) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0xc6f076e00) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0xa191b6280) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0xe6632e90) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x1272aa0860) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x41eb85790) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x125d8cf150) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x4606f76b0) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x61aa1ca50) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0xac8569390) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0xc76f7690) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x75f616bf0) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x8e1c97350) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x9c0179a20) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x12170eba30) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x99348a000) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x62445390) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x518fbdda0) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0xf939f920) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x5c0d51750) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0xcc4169460) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x61c0513b0) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x542325680) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0xd3af40820) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0xcfb7c6f70) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0xed7edd910) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x6b2c6cf0) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x1287ea2c20) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x199a706d0) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0xdffa3d960) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x2f4af7d20) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0xae26c35d0) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x80b74c370) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x10f3f44f20) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x10cccb9dd0) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x36dcd3f20) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x9ac6f050) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x44cb42d90) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x2c9aad660) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x3281138d0) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0xeb5cbbe70) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x323d8b30) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x126cfad6e0) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x360cc2d60) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x11b251c060) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x109e1dbe70) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0xc00613350) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0xf2f920b80) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0xf6cfe3700) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0xe3d209e00) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+/u/narekg/assignment6/heapmgr2.c:377:11965:beg:0x40170b
+/u/narekg/assignment6/heapmgr2.c:379:12051:beg:0x401713
+/u/narekg/assignment6/heapmgr2.c:382:12121:beg:0x401720
+/u/narekg/assignment6/heapmgr2.c:386:12227:beg:0x401728
+/u/narekg/assignment6/heapmgr2.c:387:12283:beg:0x40173c
+/u/narekg/assignment6/heapmgr2.c:386:12227:beg:0x401753
+/u/narekg/assignment6/heapmgr2.c:389:12365:beg:0x401757
+/u/narekg/assignment6/heapmgr2.c:392:12497:beg:0x4017af
+/u/narekg/assignment6/heapmgr2.c:393:12555:beg:0x4017c3
+/u/narekg/assignment6/heapmgr2.c:392:12497:beg:0x4017da
+/u/narekg/assignment6/heapmgr2.c:395:12638:beg:0x4017de
+/u/narekg/assignment6/heapmgr2.c:398:12760:beg:0x4017e6
+testRandomRandom (iCount=627, iSize=<optimized out>) at testheapmgr.c:691
+/u/narekg/assignment6/testheapmgr.c:691:20149:beg:0x400cd0
+$110 = <optimized out>
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x104d9e9960) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x9122940d0) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Bin 1023:
+	0x101ed47e80 -> $111 = {uUnits = 182399036, oAdjacentChunk = 0xdffa3d950}
+	0xdffa3d950 -> $112 = {uUnits = 245413106, oAdjacentChunk = 0xf6cfe36f0}
+	0xf6cfe36f0 -> $113 = {uUnits = 116685580, oAdjacentChunk = 0xeaa1910d0}
+	0xeaa1910d0 -> $114 = {uUnits = 326192076, oAdjacentChunk = 0xc00613340}
+	0xc00613340 -> $115 = {uUnits = 137999370, oAdjacentChunk = 0x109e1dbe60}
+	0x109e1dbe60 -> $116 = {uUnits = 120993802, oAdjacentChunk = 0x11b251c050}
+	0x11b251c050 -> $117 = {uUnits = 339413590, oAdjacentChunk = 0x35688c510}
+	0x35688c510 -> $118 = {uUnits = 74860082, oAdjacentChunk = 0x125d8cf140}
+	0x125d8cf140 -> $119 = {uUnits = 255605478, oAdjacentChunk = 0x323d8b20}
+	0x323d8b20 -> $120 = {uUnits = 339929918, oAdjacentChunk = 0x2c4ce3730}
+	0x2c4ce3730 -> $121 = {uUnits = 284615006, oAdjacentChunk = 0x44cb42d80}
+	0x44cb42d80 -> $122 = {uUnits = 162867540, oAdjacentChunk = 0x10f3f44f10}
+	0x10f3f44f10 -> $123 = {uUnits = 127109536, oAdjacentChunk = 0x7cc84a700}
+	0x7cc84a700 -> $124 = {uUnits = 241345890, oAdjacentChunk = 0xac2d44ef0}
+	0xac2d44ef0 -> $125 = {uUnits = 247774772, oAdjacentChunk = 0x184686260}
+	0x184686260 -> $126 = {uUnits = 185950390, oAdjacentChunk = 0xcc4169450}
+	0xcc4169450 -> $127 = {uUnits = 396055610, oAdjacentChunk = 0x53e9d6870}
+	0x53e9d6870 -> $128 = {uUnits = 191371144, oAdjacentChunk = 0x60aaa7630}
+	0x60aaa7630 -> $129 = {uUnits = 94981798, oAdjacentChunk = 0x5c0d51740}
+	0x5c0d51740 -> $130 = {uUnits = 34840362, oAdjacentChunk = 0xf61bd1d0}
+	0xf61bd1d0 -> $131 = {uUnits = 10914128, oAdjacentChunk = 0x510b7b3c0}
+	0x510b7b3c0 -> $132 = {uUnits = 55346762, oAdjacentChunk = 0x93c71bda0}
+	0x93c71bda0 -> $133 = {uUnits = 350650232, oAdjacentChunk = 0x89e840630}
+	0x89e840630 -> $134 = {uUnits = 194107718, oAdjacentChunk = 0x75f616be0}
+	0x75f616be0 -> $135 = {uUnits = 62360618, oAdjacentChunk = 0xc9a3208f0}
+	0xc9a3208f0 -> $136 = {uUnits = 928816, oAdjacentChunk = 0xa28eb4e50}
+	0xa28eb4e50 -> $137 = {uUnits = 57014796, oAdjacentChunk = 0xdc3b3cd00}
+	0xdc3b3cd00 -> $138 = {uUnits = 81683612, oAdjacentChunk = 0x7115b1300}
+	0x7115b1300 -> $139 = {uUnits = 108780804, oAdjacentChunk = 0x166921470}
+	0x166921470 -> $140 = {uUnits = 20211956, oAdjacentChunk = 0xa5cfb7820}
+	0xa5cfb7820 -> $141 = {uUnits = 98424530, oAdjacentChunk = 0xfebdb9c00}
+	0xfebdb9c00 -> $142 = {uUnits = 54925692, oAdjacentChunk = 0x26c4aca60}
+	0x26c4aca60 -> $143 = {uUnits = 86663640, oAdjacentChunk = 0x234b11a50}
+	0x234b11a50 -> $144 = {uUnits = 41156054, oAdjacentChunk = 0xbd02ca590}
+	0xbd02ca590 -> $145 = {uUnits = 80425706, oAdjacentChunk = 0x1184abda20}
+	0x1184abda20 -> $146 = {uUnits = 48034582, oAdjacentChunk = 0x4d47b94f0}
+	0x4d47b94f0 -> $147 = {uUnits = 71384940, oAdjacentChunk = 0x113c87c750}
+	0x113c87c750 -> $148 = {uUnits = 117608540, oAdjacentChunk = 0xb4b772380}
+	0xb4b772380 -> $149 = {uUnits = 104424284, oAdjacentChunk = 0xaa36bc590}
+	0xaa36bc590 -> $150 = {uUnits = 17098542, oAdjacentChunk = 0x66418bf80}
+	0x66418bf80 -> $151 = {uUnits = 37093838, oAdjacentChunk = 0x3ad97fe00}
+	0x3ad97fe00 -> $152 = {uUnits = 43577274, oAdjacentChunk = 0x3e01a3b00}
+	0x3e01a3b00 -> $153 = {uUnits = 96048598, oAdjacentChunk = 0x0}
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0xc422ed3a0) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Bin 1023:
+	0x9122940c0 -> $154 = {uUnits = 439324436, oAdjacentChunk = 0x101ed47e80}
+	0x101ed47e80 -> $155 = {uUnits = 182399036, oAdjacentChunk = 0xdffa3d950}
+	0xdffa3d950 -> $156 = {uUnits = 245413106, oAdjacentChunk = 0xf6cfe36f0}
+	0xf6cfe36f0 -> $157 = {uUnits = 116685580, oAdjacentChunk = 0xeaa1910d0}
+	0xeaa1910d0 -> $158 = {uUnits = 326192076, oAdjacentChunk = 0xc00613340}
+	0xc00613340 -> $159 = {uUnits = 137999370, oAdjacentChunk = 0x109e1dbe60}
+	0x109e1dbe60 -> $160 = {uUnits = 120993802, oAdjacentChunk = 0x11b251c050}
+	0x11b251c050 -> $161 = {uUnits = 339413590, oAdjacentChunk = 0x35688c510}
+	0x35688c510 -> $162 = {uUnits = 74860082, oAdjacentChunk = 0x125d8cf140}
+	0x125d8cf140 -> $163 = {uUnits = 255605478, oAdjacentChunk = 0x323d8b20}
+	0x323d8b20 -> $164 = {uUnits = 339929918, oAdjacentChunk = 0x2c4ce3730}
+	0x2c4ce3730 -> $165 = {uUnits = 284615006, oAdjacentChunk = 0x44cb42d80}
+	0x44cb42d80 -> $166 = {uUnits = 162867540, oAdjacentChunk = 0x10f3f44f10}
+	0x10f3f44f10 -> $167 = {uUnits = 127109536, oAdjacentChunk = 0x7cc84a700}
+	0x7cc84a700 -> $168 = {uUnits = 241345890, oAdjacentChunk = 0xac2d44ef0}
+	0xac2d44ef0 -> $169 = {uUnits = 247774772, oAdjacentChunk = 0x184686260}
+	0x184686260 -> $170 = {uUnits = 185950390, oAdjacentChunk = 0xcc4169450}
+	0xcc4169450 -> $171 = {uUnits = 396055610, oAdjacentChunk = 0x53e9d6870}
+	0x53e9d6870 -> $172 = {uUnits = 191371144, oAdjacentChunk = 0x60aaa7630}
+	0x60aaa7630 -> $173 = {uUnits = 94981798, oAdjacentChunk = 0x5c0d51740}
+	0x5c0d51740 -> $174 = {uUnits = 34840362, oAdjacentChunk = 0xf61bd1d0}
+	0xf61bd1d0 -> $175 = {uUnits = 10914128, oAdjacentChunk = 0x510b7b3c0}
+	0x510b7b3c0 -> $176 = {uUnits = 55346762, oAdjacentChunk = 0x89e840630}
+	0x89e840630 -> $177 = {uUnits = 194107718, oAdjacentChunk = 0x75f616be0}
+	0x75f616be0 -> $178 = {uUnits = 62360618, oAdjacentChunk = 0xc9a3208f0}
+	0xc9a3208f0 -> $179 = {uUnits = 928816, oAdjacentChunk = 0xa28eb4e50}
+	0xa28eb4e50 -> $180 = {uUnits = 57014796, oAdjacentChunk = 0xdc3b3cd00}
+	0xdc3b3cd00 -> $181 = {uUnits = 81683612, oAdjacentChunk = 0x7115b1300}
+	0x7115b1300 -> $182 = {uUnits = 108780804, oAdjacentChunk = 0x166921470}
+	0x166921470 -> $183 = {uUnits = 20211956, oAdjacentChunk = 0xa5cfb7820}
+	0xa5cfb7820 -> $184 = {uUnits = 98424530, oAdjacentChunk = 0xfebdb9c00}
+	0xfebdb9c00 -> $185 = {uUnits = 54925692, oAdjacentChunk = 0x26c4aca60}
+	0x26c4aca60 -> $186 = {uUnits = 86663640, oAdjacentChunk = 0x234b11a50}
+	0x234b11a50 -> $187 = {uUnits = 41156054, oAdjacentChunk = 0xbd02ca590}
+	0xbd02ca590 -> $188 = {uUnits = 80425706, oAdjacentChunk = 0x1184abda20}
+	0x1184abda20 -> $189 = {uUnits = 48034582, oAdjacentChunk = 0x4d47b94f0}
+	0x4d47b94f0 -> $190 = {uUnits = 71384940, oAdjacentChunk = 0x113c87c750}
+	0x113c87c750 -> $191 = {uUnits = 117608540, oAdjacentChunk = 0xb4b772380}
+	0xb4b772380 -> $192 = {uUnits = 104424284, oAdjacentChunk = 0xaa36bc590}
+	0xaa36bc590 -> $193 = {uUnits = 17098542, oAdjacentChunk = 0x66418bf80}
+	0x66418bf80 -> $194 = {uUnits = 37093838, oAdjacentChunk = 0x3ad97fe00}
+	0x3ad97fe00 -> $195 = {uUnits = 43577274, oAdjacentChunk = 0x3e01a3b00}
+	0x3e01a3b00 -> $196 = {uUnits = 96048598, oAdjacentChunk = 0x0}
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x202ba7440) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0x854ea89a0) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+/u/narekg/assignment6/heapmgr2.c:377:11965:beg:0x40170b
+/u/narekg/assignment6/heapmgr2.c:379:12051:beg:0x401713
+/u/narekg/assignment6/heapmgr2.c:382:12121:beg:0x401720
+/u/narekg/assignment6/heapmgr2.c:386:12227:beg:0x401728
+/u/narekg/assignment6/heapmgr2.c:387:12283:beg:0x40173c
+/u/narekg/assignment6/heapmgr2.c:386:12227:beg:0x401753
+/u/narekg/assignment6/heapmgr2.c:392:12497:beg:0x4017af
+/u/narekg/assignment6/heapmgr2.c:393:12555:beg:0x4017c3
+/u/narekg/assignment6/heapmgr2.c:392:12497:beg:0x4017da
+/u/narekg/assignment6/heapmgr2.c:398:12760:beg:0x4017e6
+testRandomRandom (iCount=627, iSize=<optimized out>) at testheapmgr.c:691
+/u/narekg/assignment6/testheapmgr.c:691:20149:beg:0x400cd0
+$197 = <optimized out>
+/u/narekg/assignment6/testheapmgr.c:675:19662:beg:0x400cdb
+$198 = <optimized out>
+/u/narekg/assignment6/testheapmgr.c:677:19710:beg:0x400cc3
+/u/narekg/assignment6/testheapmgr.c:675:19662:beg:0x400cdb
+/u/narekg/assignment6/testheapmgr.c:677:19710:beg:0x400cc3
+/u/narekg/assignment6/testheapmgr.c:690:20112:beg:0x400ccb
+
+Breakpoint 5, HeapMgr_free (pv=0xa03791a70) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+/u/narekg/assignment6/heapmgr2.c:377:11965:beg:0x40170b
+/u/narekg/assignment6/heapmgr2.c:379:12051:beg:0x401713
+/u/narekg/assignment6/heapmgr2.c:382:12121:beg:0x401720
+/u/narekg/assignment6/heapmgr2.c:386:12227:beg:0x401728
+/u/narekg/assignment6/heapmgr2.c:387:12283:beg:0x40173c
+/u/narekg/assignment6/heapmgr2.c:386:12227:beg:0x401753
+/u/narekg/assignment6/heapmgr2.c:389:12365:beg:0x401757
+/u/narekg/assignment6/heapmgr2.c:392:12497:beg:0x4017af
+/u/narekg/assignment6/heapmgr2.c:393:12555:beg:0x4017c3
+/u/narekg/assignment6/heapmgr2.c:392:12497:beg:0x4017da
+/u/narekg/assignment6/heapmgr2.c:398:12760:beg:0x4017e6
+testRandomRandom (iCount=627, iSize=<optimized out>) at testheapmgr.c:691
+/u/narekg/assignment6/testheapmgr.c:691:20149:beg:0x400cd0
+/u/narekg/assignment6/testheapmgr.c:675:19662:beg:0x400cdb
+/u/narekg/assignment6/testheapmgr.c:677:19710:beg:0x400cc3
+/u/narekg/assignment6/testheapmgr.c:675:19662:beg:0x400cdb
+/u/narekg/assignment6/testheapmgr.c:677:19710:beg:0x400cc3
+/u/narekg/assignment6/testheapmgr.c:690:20112:beg:0x400ccb
+
+Breakpoint 5, HeapMgr_free (pv=0x77d1dcd40) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+/u/narekg/assignment6/heapmgr2.c:377:11965:beg:0x40170b
+/u/narekg/assignment6/heapmgr2.c:379:12051:beg:0x401713
+/u/narekg/assignment6/heapmgr2.c:382:12121:beg:0x401720
+/u/narekg/assignment6/heapmgr2.c:386:12227:beg:0x401728
+/u/narekg/assignment6/heapmgr2.c:387:12283:beg:0x40173c
+/u/narekg/assignment6/heapmgr2.c:386:12227:beg:0x401753
+/u/narekg/assignment6/heapmgr2.c:392:12497:beg:0x4017af
+/u/narekg/assignment6/heapmgr2.c:393:12555:beg:0x4017c3
+/u/narekg/assignment6/heapmgr2.c:392:12497:beg:0x4017da
+/u/narekg/assignment6/heapmgr2.c:395:12638:beg:0x4017de
+/u/narekg/assignment6/heapmgr2.c:398:12760:beg:0x4017e6
+testRandomRandom (iCount=627, iSize=<optimized out>) at testheapmgr.c:691
+/u/narekg/assignment6/testheapmgr.c:691:20149:beg:0x400cd0
+/u/narekg/assignment6/testheapmgr.c:675:19662:beg:0x400cdb
+/u/narekg/assignment6/testheapmgr.c:677:19710:beg:0x400cc3
+/u/narekg/assignment6/testheapmgr.c:675:19662:beg:0x400cdb
+/u/narekg/assignment6/testheapmgr.c:677:19710:beg:0x400cc3
+/u/narekg/assignment6/testheapmgr.c:690:20112:beg:0x400ccb
+
+Breakpoint 5, HeapMgr_free (pv=0x9e3a5b970) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+/u/narekg/assignment6/heapmgr2.c:377:11965:beg:0x40170b
+/u/narekg/assignment6/heapmgr2.c:379:12051:beg:0x401713
+/u/narekg/assignment6/heapmgr2.c:382:12121:beg:0x401720
+/u/narekg/assignment6/heapmgr2.c:386:12227:beg:0x401728
+/u/narekg/assignment6/heapmgr2.c:387:12283:beg:0x40173c
+/u/narekg/assignment6/heapmgr2.c:386:12227:beg:0x401753
+/u/narekg/assignment6/heapmgr2.c:389:12365:beg:0x401757
+/u/narekg/assignment6/heapmgr2.c:392:12497:beg:0x4017af
+/u/narekg/assignment6/heapmgr2.c:393:12555:beg:0x4017c3
+/u/narekg/assignment6/heapmgr2.c:392:12497:beg:0x4017da
+/u/narekg/assignment6/heapmgr2.c:395:12638:beg:0x4017de
+/u/narekg/assignment6/heapmgr2.c:398:12760:beg:0x4017e6
+testRandomRandom (iCount=627, iSize=<optimized out>) at testheapmgr.c:691
+/u/narekg/assignment6/testheapmgr.c:691:20149:beg:0x400cd0
+/u/narekg/assignment6/testheapmgr.c:675:19662:beg:0x400cdb
+/u/narekg/assignment6/testheapmgr.c:677:19710:beg:0x400cc3
+/u/narekg/assignment6/testheapmgr.c:690:20112:beg:0x400ccb
+
+Breakpoint 5, HeapMgr_free (pv=0x40de6e9c0) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+/u/narekg/assignment6/heapmgr2.c:377:11965:beg:0x40170b
+/u/narekg/assignment6/heapmgr2.c:379:12051:beg:0x401713
+/u/narekg/assignment6/heapmgr2.c:382:12121:beg:0x401720
+/u/narekg/assignment6/heapmgr2.c:386:12227:beg:0x401728
+/u/narekg/assignment6/heapmgr2.c:387:12283:beg:0x40173c
+/u/narekg/assignment6/heapmgr2.c:386:12227:beg:0x401753
+/u/narekg/assignment6/heapmgr2.c:392:12497:beg:0x4017af
+/u/narekg/assignment6/heapmgr2.c:393:12555:beg:0x4017c3
+/u/narekg/assignment6/heapmgr2.c:392:12497:beg:0x4017da
+/u/narekg/assignment6/heapmgr2.c:395:12638:beg:0x4017de
+/u/narekg/assignment6/heapmgr2.c:398:12760:beg:0x4017e6
+testRandomRandom (iCount=627, iSize=<optimized out>) at testheapmgr.c:691
+/u/narekg/assignment6/testheapmgr.c:691:20149:beg:0x400cd0
+/u/narekg/assignment6/testheapmgr.c:675:19662:beg:0x400cdb
+/u/narekg/assignment6/testheapmgr.c:677:19710:beg:0x400cc3
+/u/narekg/assignment6/testheapmgr.c:690:20112:beg:0x400ccb
+
+Breakpoint 5, HeapMgr_free (pv=0x637f4eb70) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+/u/narekg/assignment6/heapmgr2.c:377:11965:beg:0x40170b
+/u/narekg/assignment6/heapmgr2.c:379:12051:beg:0x401713
+/u/narekg/assignment6/heapmgr2.c:382:12121:beg:0x401720
+/u/narekg/assignment6/heapmgr2.c:386:12227:beg:0x401728
+/u/narekg/assignment6/heapmgr2.c:387:12283:beg:0x40173c
+/u/narekg/assignment6/heapmgr2.c:386:12227:beg:0x401753
+/u/narekg/assignment6/heapmgr2.c:389:12365:beg:0x401757
+/u/narekg/assignment6/heapmgr2.c:392:12497:beg:0x4017af
+/u/narekg/assignment6/heapmgr2.c:393:12555:beg:0x4017c3
+/u/narekg/assignment6/heapmgr2.c:392:12497:beg:0x4017da
+/u/narekg/assignment6/heapmgr2.c:395:12638:beg:0x4017de
+/u/narekg/assignment6/heapmgr2.c:398:12760:beg:0x4017e6
+testRandomRandom (iCount=627, iSize=<optimized out>) at testheapmgr.c:691
+/u/narekg/assignment6/testheapmgr.c:691:20149:beg:0x400cd0
+/u/narekg/assignment6/testheapmgr.c:675:19662:beg:0x400cdb
+/u/narekg/assignment6/testheapmgr.c:677:19710:beg:0x400cc3
+/u/narekg/assignment6/testheapmgr.c:675:19662:beg:0x400cdb
+/u/narekg/assignment6/testheapmgr.c:677:19710:beg:0x400cc3
+/u/narekg/assignment6/testheapmgr.c:690:20112:beg:0x400ccb
+
+Breakpoint 5, HeapMgr_free (pv=0xb7d423e70) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+/u/narekg/assignment6/heapmgr2.c:377:11965:beg:0x40170b
+/u/narekg/assignment6/heapmgr2.c:379:12051:beg:0x401713
+/u/narekg/assignment6/heapmgr2.c:382:12121:beg:0x401720
+/u/narekg/assignment6/heapmgr2.c:386:12227:beg:0x401728
+/u/narekg/assignment6/heapmgr2.c:387:12283:beg:0x40173c
+/u/narekg/assignment6/heapmgr2.c:386:12227:beg:0x401753
+/u/narekg/assignment6/heapmgr2.c:392:12497:beg:0x4017af
+/u/narekg/assignment6/heapmgr2.c:393:12555:beg:0x4017c3
+/u/narekg/assignment6/heapmgr2.c:392:12497:beg:0x4017da
+/u/narekg/assignment6/heapmgr2.c:395:12638:beg:0x4017de
+/u/narekg/assignment6/heapmgr2.c:398:12760:beg:0x4017e6
+testRandomRandom (iCount=627, iSize=<optimized out>) at testheapmgr.c:691
+/u/narekg/assignment6/testheapmgr.c:691:20149:beg:0x400cd0
+/u/narekg/assignment6/testheapmgr.c:675:19662:beg:0x400cdb
+/u/narekg/assignment6/testheapmgr.c:677:19710:beg:0x400cc3
+/u/narekg/assignment6/testheapmgr.c:675:19662:beg:0x400cdb
+/u/narekg/assignment6/testheapmgr.c:677:19710:beg:0x400cc3
+/u/narekg/assignment6/testheapmgr.c:675:19662:beg:0x400cdb
+/u/narekg/assignment6/testheapmgr.c:677:19710:beg:0x400cc3
+/u/narekg/assignment6/testheapmgr.c:675:19662:beg:0x400cdb
+/u/narekg/assignment6/testheapmgr.c:677:19710:beg:0x400cc3
+/u/narekg/assignment6/testheapmgr.c:690:20112:beg:0x400ccb
+
+Breakpoint 5, HeapMgr_free (pv=0x1075ce0070) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+/u/narekg/assignment6/heapmgr2.c:377:11965:beg:0x40170b
+/u/narekg/assignment6/heapmgr2.c:379:12051:beg:0x401713
+/u/narekg/assignment6/heapmgr2.c:382:12121:beg:0x401720
+/u/narekg/assignment6/heapmgr2.c:386:12227:beg:0x401728
+/u/narekg/assignment6/heapmgr2.c:387:12283:beg:0x40173c
+/u/narekg/assignment6/heapmgr2.c:386:12227:beg:0x401753
+/u/narekg/assignment6/heapmgr2.c:389:12365:beg:0x401757
+/u/narekg/assignment6/heapmgr2.c:392:12497:beg:0x4017af
+/u/narekg/assignment6/heapmgr2.c:393:12555:beg:0x4017c3
+/u/narekg/assignment6/heapmgr2.c:392:12497:beg:0x4017da
+/u/narekg/assignment6/heapmgr2.c:395:12638:beg:0x4017de
+/u/narekg/assignment6/heapmgr2.c:398:12760:beg:0x4017e6
+testRandomRandom (iCount=627, iSize=<optimized out>) at testheapmgr.c:691
+/u/narekg/assignment6/testheapmgr.c:691:20149:beg:0x400cd0
+/u/narekg/assignment6/testheapmgr.c:675:19662:beg:0x400cdb
+/u/narekg/assignment6/testheapmgr.c:677:19710:beg:0x400cc3
+/u/narekg/assignment6/testheapmgr.c:690:20112:beg:0x400ccb
+
+Breakpoint 5, HeapMgr_free (pv=0x7c2eca060) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+/u/narekg/assignment6/heapmgr2.c:377:11965:beg:0x40170b
+/u/narekg/assignment6/heapmgr2.c:379:12051:beg:0x401713
+/u/narekg/assignment6/heapmgr2.c:382:12121:beg:0x401720
+/u/narekg/assignment6/heapmgr2.c:386:12227:beg:0x401728
+/u/narekg/assignment6/heapmgr2.c:387:12283:beg:0x40173c
+/u/narekg/assignment6/heapmgr2.c:386:12227:beg:0x401753
+/u/narekg/assignment6/heapmgr2.c:389:12365:beg:0x401757
+/u/narekg/assignment6/heapmgr2.c:392:12497:beg:0x4017af
+/u/narekg/assignment6/heapmgr2.c:393:12555:beg:0x4017c3
+/u/narekg/assignment6/heapmgr2.c:392:12497:beg:0x4017da
+/u/narekg/assignment6/heapmgr2.c:398:12760:beg:0x4017e6
+testRandomRandom (iCount=627, iSize=<optimized out>) at testheapmgr.c:691
+/u/narekg/assignment6/testheapmgr.c:691:20149:beg:0x400cd0
+/u/narekg/assignment6/testheapmgr.c:675:19662:beg:0x400cdb
+/u/narekg/assignment6/testheapmgr.c:677:19710:beg:0x400cc3
+/u/narekg/assignment6/testheapmgr.c:690:20112:beg:0x400ccb
+
+Breakpoint 5, HeapMgr_free (pv=0xb98e26590) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+/u/narekg/assignment6/heapmgr2.c:377:11965:beg:0x40170b
+/u/narekg/assignment6/heapmgr2.c:379:12051:beg:0x401713
+/u/narekg/assignment6/heapmgr2.c:382:12121:beg:0x401720
+/u/narekg/assignment6/heapmgr2.c:386:12227:beg:0x401728
+/u/narekg/assignment6/heapmgr2.c:387:12283:beg:0x40173c
+/u/narekg/assignment6/heapmgr2.c:386:12227:beg:0x401753
+/u/narekg/assignment6/heapmgr2.c:389:12365:beg:0x401757
+/u/narekg/assignment6/heapmgr2.c:392:12497:beg:0x4017af
+/u/narekg/assignment6/heapmgr2.c:393:12555:beg:0x4017c3
+/u/narekg/assignment6/heapmgr2.c:392:12497:beg:0x4017da
+/u/narekg/assignment6/heapmgr2.c:395:12638:beg:0x4017de
+/u/narekg/assignment6/heapmgr2.c:398:12760:beg:0x4017e6
+testRandomRandom (iCount=627, iSize=<optimized out>) at testheapmgr.c:691
+/u/narekg/assignment6/testheapmgr.c:691:20149:beg:0x400cd0
+/u/narekg/assignment6/testheapmgr.c:675:19662:beg:0x400cdb
+/u/narekg/assignment6/testheapmgr.c:677:19710:beg:0x400cc3
+/u/narekg/assignment6/testheapmgr.c:675:19662:beg:0x400cdb
+/u/narekg/assignment6/testheapmgr.c:677:19710:beg:0x400cc3
+/u/narekg/assignment6/testheapmgr.c:690:20112:beg:0x400ccb
+
+Breakpoint 5, HeapMgr_free (pv=0x248510910) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+/u/narekg/assignment6/heapmgr2.c:377:11965:beg:0x40170b
+/u/narekg/assignment6/heapmgr2.c:379:12051:beg:0x401713
+/u/narekg/assignment6/heapmgr2.c:382:12121:beg:0x401720
+/u/narekg/assignment6/heapmgr2.c:386:12227:beg:0x401728
+/u/narekg/assignment6/heapmgr2.c:387:12283:beg:0x40173c
+/u/narekg/assignment6/heapmgr2.c:386:12227:beg:0x401753
+/u/narekg/assignment6/heapmgr2.c:389:12365:beg:0x401757
+/u/narekg/assignment6/heapmgr2.c:392:12497:beg:0x4017af
+/u/narekg/assignment6/heapmgr2.c:393:12555:beg:0x4017c3
+/u/narekg/assignment6/heapmgr2.c:392:12497:beg:0x4017da
+/u/narekg/assignment6/heapmgr2.c:395:12638:beg:0x4017de
+/u/narekg/assignment6/heapmgr2.c:398:12760:beg:0x4017e6
+testRandomRandom (iCount=627, iSize=<optimized out>) at testheapmgr.c:691
+/u/narekg/assignment6/testheapmgr.c:691:20149:beg:0x400cd0
+/u/narekg/assignment6/testheapmgr.c:675:19662:beg:0x400cdb
+/u/narekg/assignment6/testheapmgr.c:677:19710:beg:0x400cc3
+/u/narekg/assignment6/testheapmgr.c:690:20112:beg:0x400ccb
+
+Breakpoint 5, HeapMgr_free (pv=0x10d7cf7ec0) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+/u/narekg/assignment6/heapmgr2.c:377:11965:beg:0x40170b
+/u/narekg/assignment6/heapmgr2.c:379:12051:beg:0x401713
+/u/narekg/assignment6/heapmgr2.c:382:12121:beg:0x401720
+/u/narekg/assignment6/heapmgr2.c:386:12227:beg:0x401728
+/u/narekg/assignment6/heapmgr2.c:387:12283:beg:0x40173c
+/u/narekg/assignment6/heapmgr2.c:386:12227:beg:0x401753
+/u/narekg/assignment6/heapmgr2.c:389:12365:beg:0x401757
+/u/narekg/assignment6/heapmgr2.c:392:12497:beg:0x4017af
+/u/narekg/assignment6/heapmgr2.c:393:12555:beg:0x4017c3
+/u/narekg/assignment6/heapmgr2.c:392:12497:beg:0x4017da
+/u/narekg/assignment6/heapmgr2.c:395:12638:beg:0x4017de
+/u/narekg/assignment6/heapmgr2.c:398:12760:beg:0x4017e6
+testRandomRandom (iCount=627, iSize=<optimized out>) at testheapmgr.c:691
+/u/narekg/assignment6/testheapmgr.c:691:20149:beg:0x400cd0
+/u/narekg/assignment6/testheapmgr.c:675:19662:beg:0x400cdb
+/u/narekg/assignment6/testheapmgr.c:677:19710:beg:0x400cc3
+/u/narekg/assignment6/testheapmgr.c:690:20112:beg:0x400ccb
+
+Breakpoint 5, HeapMgr_free (pv=0xf45a36f40) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+/u/narekg/assignment6/heapmgr2.c:377:11965:beg:0x40170b
+/u/narekg/assignment6/heapmgr2.c:379:12051:beg:0x401713
+/u/narekg/assignment6/heapmgr2.c:382:12121:beg:0x401720
+/u/narekg/assignment6/heapmgr2.c:386:12227:beg:0x401728
+/u/narekg/assignment6/heapmgr2.c:387:12283:beg:0x40173c
+/u/narekg/assignment6/heapmgr2.c:386:12227:beg:0x401753
+/u/narekg/assignment6/heapmgr2.c:389:12365:beg:0x401757
+/u/narekg/assignment6/heapmgr2.c:392:12497:beg:0x4017af
+/u/narekg/assignment6/heapmgr2.c:393:12555:beg:0x4017c3
+/u/narekg/assignment6/heapmgr2.c:392:12497:beg:0x4017da
+/u/narekg/assignment6/heapmgr2.c:395:12638:beg:0x4017de
+/u/narekg/assignment6/heapmgr2.c:398:12760:beg:0x4017e6
+testRandomRandom (iCount=627, iSize=<optimized out>) at testheapmgr.c:691
+/u/narekg/assignment6/testheapmgr.c:691:20149:beg:0x400cd0
+/u/narekg/assignment6/testheapmgr.c:675:19662:beg:0x400cdb
+/u/narekg/assignment6/testheapmgr.c:677:19710:beg:0x400cc3
+/u/narekg/assignment6/testheapmgr.c:690:20112:beg:0x400ccb
+
+Breakpoint 5, HeapMgr_free (pv=0x5d17210a0) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+/u/narekg/assignment6/heapmgr2.c:377:11965:beg:0x40170b
+/u/narekg/assignment6/heapmgr2.c:379:12051:beg:0x401713
+/u/narekg/assignment6/heapmgr2.c:382:12121:beg:0x401720
+/u/narekg/assignment6/heapmgr2.c:386:12227:beg:0x401728
+/u/narekg/assignment6/heapmgr2.c:387:12283:beg:0x40173c
+/u/narekg/assignment6/heapmgr2.c:386:12227:beg:0x401753
+/u/narekg/assignment6/heapmgr2.c:389:12365:beg:0x401757
+/u/narekg/assignment6/heapmgr2.c:392:12497:beg:0x4017af
+/u/narekg/assignment6/heapmgr2.c:393:12555:beg:0x4017c3
+/u/narekg/assignment6/heapmgr2.c:392:12497:beg:0x4017da
+/u/narekg/assignment6/heapmgr2.c:395:12638:beg:0x4017de
+/u/narekg/assignment6/heapmgr2.c:398:12760:beg:0x4017e6
+testRandomRandom (iCount=627, iSize=<optimized out>) at testheapmgr.c:691
+/u/narekg/assignment6/testheapmgr.c:691:20149:beg:0x400cd0
+/u/narekg/assignment6/testheapmgr.c:675:19662:beg:0x400cdb
+/u/narekg/assignment6/testheapmgr.c:677:19710:beg:0x400cc3
+/u/narekg/assignment6/testheapmgr.c:675:19662:beg:0x400cdb
+/u/narekg/assignment6/testheapmgr.c:677:19710:beg:0x400cc3
+/u/narekg/assignment6/testheapmgr.c:690:20112:beg:0x400ccb
+
+Breakpoint 5, HeapMgr_free (pv=0x7aaeb8a80) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+/u/narekg/assignment6/heapmgr2.c:377:11965:beg:0x40170b
+/u/narekg/assignment6/heapmgr2.c:379:12051:beg:0x401713
+/u/narekg/assignment6/heapmgr2.c:382:12121:beg:0x401720
+/u/narekg/assignment6/heapmgr2.c:386:12227:beg:0x401728
+/u/narekg/assignment6/heapmgr2.c:387:12283:beg:0x40173c
+/u/narekg/assignment6/heapmgr2.c:386:12227:beg:0x401753
+/u/narekg/assignment6/heapmgr2.c:389:12365:beg:0x401757
+/u/narekg/assignment6/heapmgr2.c:392:12497:beg:0x4017af
+/u/narekg/assignment6/heapmgr2.c:393:12555:beg:0x4017c3
+/u/narekg/assignment6/heapmgr2.c:392:12497:beg:0x4017da
+/u/narekg/assignment6/heapmgr2.c:395:12638:beg:0x4017de
+/u/narekg/assignment6/heapmgr2.c:398:12760:beg:0x4017e6
+testRandomRandom (iCount=627, iSize=<optimized out>) at testheapmgr.c:691
+/u/narekg/assignment6/testheapmgr.c:691:20149:beg:0x400cd0
+Continuing.
+
+Breakpoint 5, HeapMgr_free (pv=0xfa4a20f60) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Will ignore next 19 crossings of breakpoint 2.  Will ignore next 19 crossings of breakpoint 3.  Will ignore next 19 crossings of breakpoint 4.  Will ignore next 19 crossings of breakpoint 5.  Continuing.
+
+Breakpoint 2, HeapMgr_free (pv=0x4f6859060) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Continuing.
+
+Breakpoint 2, HeapMgr_free (pv=0x6a1640da0) at heapmgr2.c:373
+/u/narekg/assignment6/heapmgr2.c:373:11825:beg:0x401707
+Will ignore next 19 crossings of breakpoint 2.  Will ignore next 19 crossings of breakpoint 3.  Will ignore next 19 crossings of breakpoint 4.  Will ignore next 19 crossings of breakpoint 5.  Continuing.
+
+Program received signal SIGSEGV, Segmentation fault.
+Chunk_setNextInList (oChunk=oChunk@entry=0x0, oNextChunk=oNextChunk@entry=0x0) at chunk.c:122
+/u/narekg/assignment6/chunk.c:122:3000:beg:0x401849
+#0  Chunk_setNextInList (oChunk=oChunk@entry=0x0, oNextChunk=oNextChunk@entry=0x0) at chunk.c:122
+#1  0x00000000004013c9 in HeapMgr_removeFromList (oChunk=oChunk@entry=0xf61bd1d0) at heapmgr2.c:153
+#2  0x000000000040144c in HeapMgr_coalesceBackward (oChunk=oChunk@entry=0xbf6863ce0) at heapmgr2.c:258
+#3  0x00000000004017e6 in HeapMgr_free (pv=<optimized out>) at heapmgr2.c:395
+#4  0x0000000000400cd0 in testRandomRandom (iCount=627, iSize=<optimized out>) at testheapmgr.c:690
+#5  0x0000000000401228 in main (argc=<optimized out>, argv=0x7fffffffe0b8) at testheapmgr.c:162
+A debugging session is active.
+
+	Inferior 1 [process 20601] will be killed.
+
+Quit anyway? (y or n) 

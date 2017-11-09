@@ -1,0 +1,306 @@
+/*--------------------------------------------------------------------*/
+/* checker2.c                                                         */
+/* Author: Nathaniel M. Wilson                                        */
+/* Author: Narek Galstyan                                             */
+/*--------------------------------------------------------------------*/
+
+#include "checker2.h"
+#include <stdio.h>
+#include <assert.h>
+
+/*In lieu of a boolean data type. */
+enum {FALSE, TRUE};
+
+int Checker_isValid(Chunk_T oHeapStart, Chunk_T oHeapEnd,
+                    Chunk_T aoBins[], int iBinCount)
+{
+   Chunk_T oChunk; /* current chunk in traversals */
+   Chunk_T oPrevChunk; /* previous chunk in traversals */
+   Chunk_T oNextChunk; /* next chunk in tranversals*/
+   Chunk_T oTortoiseChunk; /* used in cycle detection */
+   Chunk_T oHareChunk; /* used in cycel detection */
+   Chunk_T oFreeListEnd;/* will point to the last chunk in LinkedList */
+   int iIndex;
+
+   /* validate  params */
+   assert(aoBins != NULL);
+   
+   /* check for an initialized heap */
+   if (oHeapStart == NULL)
+   {
+      fprintf(stderr, "The heap start is uninitialized\n");
+      return FALSE;
+   }
+   if (oHeapEnd == NULL)
+   {
+      fprintf(stderr, "The heap end is uninitialized\n");
+      return FALSE;
+   }
+
+
+   /* If the heap is empty, are all free lists empty too? */
+   if (oHeapStart == oHeapEnd)
+   {
+      for (iIndex = 0; iIndex < iBinCount; iIndex++)
+      {
+         if (aoBins[iIndex] != NULL)
+         {
+            fprintf(stderr,
+                    "The heap is empty, but list %d is not.\n", iIndex);
+            return FALSE;
+         }
+      }
+      return TRUE;
+   }
+   
+   /* Traverse memory through forward links. */
+   for (oChunk = oHeapStart;
+        oChunk != NULL;
+        oChunk = Chunk_getNextInMem(oChunk, oHeapEnd))
+   {
+      /* Is the chunk valid? */
+      if (! Chunk_isValid(oChunk, oHeapStart, oHeapEnd))
+      {
+         fprintf(stderr, "Traversing memory detected a bad chunk\n");
+         return FALSE;
+      }
+   }
+
+   /* Traverse memory through backward links. */
+   for (oChunk = Chunk_getPrevInMem(oHeapEnd, oHeapStart);
+        oChunk != NULL;
+        oChunk = Chunk_getPrevInMem(oChunk, oHeapStart))
+   {
+      /* Is the chunk valid? */
+      if (! Chunk_isValid(oChunk, oHeapStart, oHeapEnd))
+      {
+         fprintf(stderr, "Backward traversing memory"
+                 " detected a bad chunk\n");
+         return FALSE;
+      }
+   }
+
+   /* for each bin */
+   for (iIndex = 0; iIndex < iBinCount; iIndex++)
+   {
+      /* Is the list devoid of forward cycles? Use Floyd's algorithm to
+         find out */
+      oFreeListEnd = NULL;
+      oTortoiseChunk = aoBins[iIndex];
+      oHareChunk = aoBins[iIndex];
+      if (oHareChunk != NULL) {
+         oFreeListEnd = oHareChunk;
+         oHareChunk = Chunk_getNextInList(oHareChunk);
+      }
+      while (oHareChunk != NULL)
+      {
+         /* by the end of the loop oFreeListEnd stores
+          * the end of the loop so the backward cycles could be found
+          */
+         oFreeListEnd = oHareChunk;
+         if (oTortoiseChunk == oHareChunk)
+         {
+            fprintf(stderr, "The list has a forward cycle\n");
+            return FALSE;
+         }
+
+         /* do List links point to meaningful positions?*/
+         if(!Chunk_isValid(oHareChunk, oHeapStart, oHeapEnd))
+         {
+            fprintf(stderr, "Forward link of some element in free"
+                    " list is corrupted\n");
+            return FALSE;
+         }
+         /* Move oTortoiseChunk one step. */
+         oTortoiseChunk = Chunk_getNextInList(oTortoiseChunk);
+         /* Move oHareChunk two steps, if possible. */
+         oHareChunk = Chunk_getNextInList(oHareChunk);
+         if (oHareChunk != NULL) {
+            /* do List links point to meaningful positions?*/
+            if(!Chunk_isValid(oHareChunk, oHeapStart, oHeapEnd))
+            {
+               fprintf(stderr, "Forward link of some element in free"
+                       " list is corrupted\n");
+               return FALSE;
+            }
+
+            oFreeListEnd = oHareChunk;
+            /* because hare jumps in steps of two */
+            oHareChunk = Chunk_getNextInList(oHareChunk);
+         }
+      }
+      /* Is the list devoid of backward cycles? Use Floyd's algorithm to
+         find out.*/
+      oTortoiseChunk = oFreeListEnd;
+      oHareChunk = oFreeListEnd;
+
+      /* if there is a free list and the length is more than one */
+      if (oHareChunk != NULL)
+      {
+         /* do List links point to meaningful positions?*/
+         if(!Chunk_isValid(oHareChunk, oHeapStart, oHeapEnd))
+         {
+            fprintf(stderr, "Backward link of the last element in the free"
+                    " list is corrupted\n");
+            return FALSE;
+         }
+         oHareChunk = Chunk_getPrevInList(oHareChunk);
+      }
+      /* There is no NULL terminator in the begining of the list so
+       * the start of the free list will serve as a terminator */
+
+      while (oHareChunk != NULL)
+      {
+
+         if (oTortoiseChunk == oHareChunk)
+         {
+            fprintf(stderr, "The list has a backward cycle\n");
+            return FALSE;
+         }
+         /* Move oTortoiseChunk one step. */
+         oTortoiseChunk = Chunk_getPrevInList(oTortoiseChunk);
+         /* Move oHareChunk two steps, if possible. */
+
+         /* do List links point to meaningful positions?*/
+         if(!Chunk_isValid(oHareChunk, oHeapStart, oHeapEnd))
+         {
+            fprintf(stderr, "Backward link of some element in free"
+                    " list is corrupted\n");
+            return FALSE;
+         }
+         oHareChunk = Chunk_getPrevInList(oHareChunk);
+
+         if (oHareChunk != NULL) {
+
+            /* do List links point to meaningful positions?*/
+            if(!Chunk_isValid(oHareChunk, oHeapStart, oHeapEnd))
+            {
+               fprintf(stderr, "Backward link of some element in free"
+                       " list is corrupted\n");
+               return FALSE;
+            }
+            /* run hare run*/
+            oHareChunk = Chunk_getPrevInList(oHareChunk);
+         }
+      }
+
+      /* Traverse each free list. */
+
+      oPrevChunk = NULL;
+      oNextChunk = NULL;
+      for (oChunk = aoBins[iIndex];
+           oChunk != NULL;
+           oChunk = Chunk_getNextInList(oChunk))
+      {
+         oPrevChunk = Chunk_getPrevInMem(oChunk, oHeapStart);
+         oNextChunk = Chunk_getNextInMem(oChunk, oHeapEnd);
+
+         /* Is the chunk valid? */
+         if (! Chunk_isValid(oChunk, oHeapStart, oHeapEnd))
+         {
+            fprintf(stderr, "Traversing the list detected bad chunk\n");
+            return FALSE;
+         }
+
+         /*ensure status bit set correctly*/
+         if (Chunk_getStatus(oChunk) == CHUNK_INUSE)
+         {
+            fprintf(stderr, "chunk in free list marked as in use.\n");
+            return FALSE;
+         }
+         if ((oPrevChunk != NULL) &&
+             (Chunk_getStatus(oPrevChunk) == CHUNK_FREE))
+         {
+            fprintf(stderr, "The heap contains contiguous free chunks"
+                    " just after a memory in free list\n");
+            return FALSE;
+         }
+         
+         /* Is the next chunk in memory in use? */
+         if ((oNextChunk != NULL) &&
+             (Chunk_getStatus(oNextChunk) == CHUNK_FREE))
+         {
+            fprintf(stderr, "The heap contains contiguous free chunks"
+                    " just before a memory in free list\n");
+            return FALSE;
+         }
+
+      }
+
+      /*Is the Current node in the linked list the next node of
+       * the previous one and the previous of the next one?*/
+      oPrevChunk = NULL;
+      oNextChunk = NULL;
+      for (oChunk = aoBins[iIndex];
+           oChunk != NULL;
+           oChunk = Chunk_getNextInList(oChunk))
+      {
+         if(oChunk != aoBins[iIndex]) /* if not in the first iteration*/
+            oPrevChunk = Chunk_getPrevInList(oChunk);
+         oNextChunk = Chunk_getNextInList(oChunk);
+         /* The next of the previous */
+         if(oPrevChunk != NULL &&
+            Chunk_getNextInList(oPrevChunk) != oChunk)
+         {
+            fprintf(stderr, "Next of the perivous is not the current in"
+                    " the Linked List\n");
+            return FALSE;
+         }
+         /* The previous of the next */
+         if(oNextChunk != NULL &&
+            Chunk_getPrevInList(oNextChunk) != oChunk)
+         {
+            fprintf(stderr, "Previous of the Next is not the current in"
+                    " the Linked List\n");
+            return FALSE;
+
+         }
+      }
+   }
+
+   for (iIndex = 0; iIndex < iBinCount; iIndex++)
+   {
+      /* make sure that each item in each list has the right size, 
+         skipping the last list */
+      if (iIndex == (iBinCount - 1)) continue;     
+      for (oChunk = aoBins[iIndex];
+           oChunk != NULL;
+           oChunk = Chunk_getNextInList(oChunk))
+      {
+         if ((int) Chunk_getUnits(oChunk) != iIndex)
+         {
+            if(iIndex == iBinCount - 1 &&
+               (int) Chunk_getUnits(oChunk) >= iBinCount- 1) continue;
+            fprintf(stderr, "chunk with %d units in bin %d\n",
+                    (int) Chunk_getUnits(oChunk), iIndex);
+            return FALSE;
+         }
+      }
+   }
+
+
+   for (oChunk = oHeapStart;
+        oChunk != NULL;
+        oChunk = Chunk_getNextInMem(oChunk, oHeapEnd))
+   {
+      
+      /* if Chunk is free, it should be in the free list */
+      if(Chunk_getStatus(oChunk) == CHUNK_FREE) {
+         Chunk_T oCurrent = NULL;
+         for(iIndex = 0; (iIndex < iBinCount) &&  (oCurrent != oChunk); iIndex++)
+         {
+            oCurrent = aoBins[iIndex];
+            while(oCurrent != NULL && oCurrent != oChunk) {
+               oCurrent = Chunk_getNextInList(oCurrent);
+            }
+         }
+         if(oCurrent != oChunk)
+         {
+            fprintf(stderr, "Status bit of the chunk is set FREE but"
+                    " it is not in free list\n");
+            return FALSE;
+         }
+      }
+   }   
+   return TRUE;
+}

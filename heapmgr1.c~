@@ -1,0 +1,47 @@
+
+
+enum {FALSE, TRUE};
+
+enum {MIN_UNITS_FROM_OS = 512};
+
+static Chunk_T oHeapStart = NULL;
+static Chunk_T oHeapEnd   = NULL;
+static Chunk_T oFreeList  = NULL;
+
+void HeapMgr_setToFront(Chunk_T oChunk);
+
+void HeapMgr_removeFromList(Chunk_T oChunk)
+{
+   
+}
+
+
+void *HeapMgr_malloc(size_t uBytes)
+{
+   size_t uUnits;
+   
+   if (uBytes == 0)
+      return NULL;
+   
+   /* initialize */
+   if (oHeapStart == NULL)
+   {
+      oHeapStart = (Chunk_T)sbrk(0);
+      oHeapEnd = oHeapStart;
+   }
+
+   /* determine units needed */
+   uUnits = Chunk_bytesToUnits(uBytes);
+
+   /* for each chunk in the free list */
+   for (oChunk = oFreeList;
+        oChunk != NULL;
+        oChunk = Chunk_getNextInList(oChunk))
+   {
+      /* if the current free list chunk is big enough */
+      if (uUnits <= Chunk_getUnits(oChunk))
+      {
+         
+      }
+   }
+}

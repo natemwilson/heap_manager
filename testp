@@ -1,0 +1,3 @@
+# script to run and compare resutls
+#echo <(echo) <(echo)
+diff  <(./test2 $1 $2 $3) <(./test2good $1 $2 $3)

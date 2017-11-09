@@ -3,12 +3,12 @@ Assignment 6 readme File
 ------------------------------------------------------------------------
 Student 1: What is your name?
 
-
+Nate Wilson
 
 ------------------------------------------------------------------------
 Student 2: What is your name?
 
-
+Narek Galstyan
 
 ------------------------------------------------------------------------
 Student 1: What authorized sources of information did you use to
@@ -16,13 +16,53 @@ complete the assignment? COPY THE LIST of authorized sources of
 information given in the "Policies" web page to this section of the
 readme file, and edit it as appropriate.
 
+The course's lectures.
+Used.
+The course's precepts.
+Absolutely essential.
+The course's website.
+I used this helpful resource
+Documents that are referenced directly by the course's website.
+Such documents include the course's lecture slides and precept handouts.
+Essential and used.
+The course's textbooks.(for extra challenge)
 
-
+The man pages on the CourseLab cluster.
+Not really used.
+The course's current staff members outside of class time through office hours.
+Office hours with Dr Dondero and Dr Gupta were essential.
+The course's current staff members outside of class time through meetings.
+Not used.
+The course's current staff members outside of class time through Piazza.
+Piazza was helpful.
+The course's current staff members outside of class time through e-mail.
+Not used.
+Current lab teaching assistants through visits to the course labs.
+Not used.
 ------------------------------------------------------------------------
 Student 2: What authorized sources of information did you use to
 complete the assignment? COPY THE LIST of authorized sources of
 information given in the "Policies" web page to this section of the
 readme file, and edit it as appropriate.
+
+The course's lectures.
+
+The course's precepts.
+
+The course's website.
+
+Documents that are referenced directly by the course's website.
+Such documents include the course's lecture slides and precept handouts.
+
+The course's textbooks.(for extra challenge)
+
+The man pages on the CourseLab cluster.
+
+The course's current staff members outside of class time through
+office hours.
+Office hours with Dr Dondero and Dr Gupta were essential.
+
+The course's current staff members outside of class time through Piazza.
 
 
 
@@ -38,7 +78,7 @@ nature of the interaction, may additionally require the interaction
 being reported to the Committee on Discipline. Write "None" if you used
 no unauthorized sources of information.
 
-
+None.
 
 ------------------------------------------------------------------------
 Student 2: What unauthorized sources of information did you use to
@@ -51,19 +91,21 @@ unauthorized source may trigger a course penalty, and depending on the
 nature of the interaction, may additionally require the interaction
 being reported to the Committee on Discipline. Write "None" if you used
 no unauthorized sources of information.
-
+None.
 
 
 ------------------------------------------------------------------------
 Student 1: What is your assessment of the assignment? Was it helpful?
 Was it fun?
 
-
+I found this assignment quite engaging!
 
 ------------------------------------------------------------------------
 Student 2: What is your assessment of the assignment? Was it helpful?
 Was it fun?
-
+Well, the assembly is still the highlight but this was very useful
+I think I will end up using this code whenever I use C with dynamic
+memory for debugging
 
 
 ------------------------------------------------------------------------
@@ -80,7 +122,7 @@ disagreements with them? Copy the splint warnings here, and express your
 disagreement after each warning. If there are no warnings, then write
 "None."
 
-
+None.
 
 ------------------------------------------------------------------------
 What warnings does critTer generate on checker1.c, and what are your
@@ -88,7 +130,11 @@ disagreements with them? Copy the critTer warnings here, and express
 your disagreement after each warning. If there are no warnings, then
 write "None."
 
-
+   checker1.c: line 16: low priority:
+   A function should consist of fewer than 140 lines;
+   this function consists of 255 lines; consider refactoring
+   	- This makes sense because although checker is one function,
+	  it actually does several discrete jobs.
 
 ------------------------------------------------------------------------
 What warnings does critTer generate on heapmgr1.c, and what are your
@@ -96,7 +142,7 @@ disagreements with them? Copy the critTer warnings here, and express
 your disagreement after each warning. If there are no warnings, then
 write "None."
 
-
+None
 
 ------------------------------------------------------------------------
 What warnings does splint generate on
@@ -105,7 +151,7 @@ disagreements with them? Copy the splint warnings here, and express your
 disagreement after each warning. If there are no warnings, then write
 "None."
 
-
+None.
 
 ------------------------------------------------------------------------
 What warnings does critTer generate on checker2.c, and what are your
@@ -113,7 +159,29 @@ disagreements with them? Copy the critTer warnings here, and express
 your disagreement after each warning. If there are no warnings, then
 write "None."
 
+   checker2.c: line 85: low priority:
+      A loop should consist of fewer than 35 lines;
+         this loop consists of 168 lines; consider refactoring
 
+   checker2.c: line 16: low priority:
+      A function should consist of fewer than 140 lines;
+         this function consists of 283 lines; consider refactoring
+
+   checker2.c: line 121: low priority:
+      This area is deeply nested at level 4, consider refactoring
+
+   checker2.c: line 177: low priority:
+      This area is deeply nested at level 4, consider refactoring
+
+   checker2.c: line 273: low priority:
+      This area is deeply nested at level 4, consider refactoring
+
+   checker2.c: line 293: low priority:
+      This area is deeply nested at level 4, consider refactoring
+
+    -All of these low priority warnings are due to the unusual nature
+     of the checker function. Although it is one function, it actually
+     does many discrete jobs.
 
 ------------------------------------------------------------------------
 What warnings does critTer generate on heapmgr2.c, and what are your
@@ -121,7 +189,7 @@ disagreements with them? Copy the critTer warnings here, and express
 your disagreement after each warning. If there are no warnings, then
 write "None."
 
-
+None.
 
 ------------------------------------------------------------------------
 What are the CPU times and heap memory consumed by testheapmgr using
@@ -129,12 +197,50 @@ heapmgrgnu.c, heapmgrbase.c, heapmgr1.c, and heapmgr2.c, with tests
 RandomRandom and Worst, with call count 100000, and with maximum chunk
 sizes 2000 and 20000? COPY THE OUTPUT OF THE testheap SCRIPT HERE.
 
-
+      Executable         Test   Count   Size   Time        Mem
+      ===============================================================
+      ./testgnu RandomRandom  100000   2000   0.05     135168
+      ./testgnu        Worst  100000   2000   0.03   52445184
+      ---------------------------------------------------------------
+      ./testgnu RandomRandom  100000  20000   0.08     135168
+      ./testgnu        Worst  100000  20000   0.09  502513664
+      ===============================================================
+      ./test2 RandomRandom  100000   2000   0.03   17825792
+      ./test2        Worst  100000   2000   0.06   54419456
+      ---------------------------------------------------------------
+      ./test2 RandomRandom  100000  20000   0.10  180754144
+      ./test2        Worst  100000  20000   1.31  504410368
+      ===============================================================
+      ./test1 RandomRandom  100000   2000   0.19   22487040
+      ./test1        Worst  100000   2000  15.96   54419456
+      ---------------------------------------------------------------
+      ./test1 RandomRandom  100000  20000   1.33  218522528
+      ./test1        Worst  100000  20000  30.42  504410368
+      ===============================================================
+      ./testbase RandomRandom  100000   2000   6.73   18882560
+      ./testbase        Worst  100000   2000  11.10   55803904
+      ---------------------------------------------------------------
+      ./testbase RandomRandom  100000  20000  15.49  183345504
+      ./testbase        Worst  100000  20000  61.64  525465344
 
 ------------------------------------------------------------------------
 How can the heapmgrgnu.c implementation consume so little heap
 memory?
+There are seval ways malloc could be optimized. one of them is using
+the Buddy Systems which is similar to heapmgr2 implementation but
+uses only powers of two as bucket sizes which makes it easier
+to do pointer arithmetic with addresses. Although it introduces more
+fragmentation, it is faster because of faster arithmetic
+
+For small mallocs, it seems that gnu version of malloc just allocates
+space in data section thereby decreasing the heap usage. Additionally,
+building with -o option sometimes eliminates some variables all together
 
 
+On the other hand, for particularly big mallocs, gnu malloc calls
+mmap instead of brk
+mmap maps additional physical memory out of the memory space of the
+program (out of heap). of course then the free() will need to call
+munmap to free it.
 
 ------------------------------------------------------------------------
